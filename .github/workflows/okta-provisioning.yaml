@@ -47,7 +47,7 @@ jobs:
   cnspec-scan-terraform-hcl:
     name: "Scan Terraform (pre-plan)"
     runs-on: ubuntu-latest
-    container: mondoo/cnspec:8
+    container: mondoo/cnspec:9
     needs: terraform-pre-plan-validation 
     permissions:
       pull-requests: write
