@@ -45,11 +45,11 @@ variable "password_max_age_days" {
 }
 
 variable "password_expire_warn_days" {
-  default = 15
+  default = 10
 }
 
 variable "password_history_count" {
-  default = 24
+  default = 20
 }
 
 variable "password_max_lockout_attempts" {
