@@ -103,7 +103,7 @@ jobs:
     name: Scan Terraform (post-plan)
     needs: terraform-plan
     runs-on: ubuntu-latest
-    container: mondoo/cnspec:latest
+    container: mondoo/cnspec:9
 
     steps:
       - name: Check out repository code
@@ -152,7 +152,7 @@ jobs:
     name: Scan Okta Org (Post-Apply)
     needs: terraform-apply
     runs-on: ubuntu-latest
-    container: mondoo/cnspec:latest
+    container: mondoo/cnspec:9
 
     steps:
       - name: Check out repository code
